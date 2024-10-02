@@ -17,7 +17,10 @@ const Header = () => {
           <button className="header_serarch">검색</button>
         </form>
       </HeaderCenter>
-      <HeaderRight className="header_right_profill"></HeaderRight>
+      <HeaderRight className="header_right">
+        <div className="header_right_search">🔍</div>
+        <div className="header_right_profill"></div>
+      </HeaderRight>
     </HeaderWrap>
   );
 };
@@ -87,9 +90,20 @@ const HeaderCenter = styled.div`
 `;
 
 const HeaderRight = styled.div`
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  background-color: #333;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .header_right_search {
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .header_right_profill {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #333;
+  }
 `;

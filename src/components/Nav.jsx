@@ -46,7 +46,7 @@ const NavWrap = styled.div`
     .nav_icon {
       width: 32px;
       height: 32px;
-      border-radius: 50%;
+      border-radius: 15%;
       background-color: #666;
     }
 

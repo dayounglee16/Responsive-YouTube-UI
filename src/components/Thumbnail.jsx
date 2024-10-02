@@ -9,11 +9,11 @@ const Thumbnail = () => {
           <ThumbnaiItem key={data.id}>
             <div className="thumbnail"></div>
             <div className="thumbnail_info">
-              <div className="thumbnail_profile">프로필</div>
+              <div className="thumbnail_profile"></div>
               <ul className="thumbnail_text">
                 <li className="thumbnail_title">{data.title}</li>
                 <li className="thumbnail_name">{data.name}</li>
-                <li className="thumbnail_text">
+                <li className="thumbnail_text_bottom">
                   <span className="thumbnail_viewCount">{data.viewCount}</span>
                   <span className="thumbnail_timeAgo">{data.timeAgo}</span>
                 </li>
@@ -41,11 +41,15 @@ const ThumbnailWrap = styled.div`
   }
 
   @media screen and (min-width: 600px) and (max-width: 1024px) {
-    margin: 80px 10vw;
+    margin: 80px auto;
+    padding: 0;
+    width: 95%;
+    padding-left: 67px;
   }
   @media screen and (max-width: 599px) {
     margin: 80px auto;
     justify-content: center;
+    width: 98%;
   }
 `;
 
@@ -61,6 +65,27 @@ const ThumbnaiItem = styled.div`
   }
   .thumbnail_info {
     margin: 20px 0 30px 0;
+    display: flex;
+    gap: 15px;
+
+    .thumbnail_profile {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background-color: #999;
+    }
+    .thumbnail_title {
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 5px;
+    }
+    .thumbnail_name {
+      color: #777;
+    }
+    .thumbnail_text_bottom {
+      font-size: 14px;
+      color: #999;
+    }
   }
   @media screen and (min-width: 1025px) and (max-width: 1300px) {
     width: 32%;
