@@ -85,6 +85,8 @@ const ThumbnaiItem = styled.div`
     .thumbnail_text_bottom {
       font-size: 14px;
       color: #999;
+      display: flex;
+      gap: 5px;
     }
   }
   @media screen and (min-width: 1025px) and (max-width: 1300px) {
