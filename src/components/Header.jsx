@@ -98,6 +98,7 @@ const HeaderRight = styled.div`
   .header_right_search {
     font-size: 1.8rem;
     cursor: pointer;
+    display: none;
   }
 
   .header_right_profill {
@@ -105,5 +106,11 @@ const HeaderRight = styled.div`
     height: 35px;
     border-radius: 50%;
     background-color: #333;
+  }
+
+  @media screen and (max-width: 1281px) {
+    .header_right_search {
+      display: block;
+    }
   }
 `;
