@@ -5,7 +5,7 @@ const Header = () => {
     <HeaderWrap className="header_wrap">
       <HeaderLeft className="header_left">
         <div className="header_icon">&#9776;</div>
-        <h4 className="header_logo">YOUTUE</h4>
+        <h4 className="header_logo">YOUTUBE</h4>
       </HeaderLeft>
       <HeaderCenter className="header_center">
         <form>
